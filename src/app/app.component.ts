@@ -35,7 +35,9 @@ export class AppComponent implements OnInit,AfterContentInit,AfterViewInit{
       this.navbarName="Likhith RK";
     }
     window.onload = () =>{
-      this.preloading=false;
+      setTimeout(()=>{
+        this.preloading=false;
+      },500);
     }
   }
 
