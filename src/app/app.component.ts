@@ -12,7 +12,7 @@ import Typed from 'typed.js';
     "(window:resize)":"onWindowResize($event)"
   }
 })
-export class AppComponent implements OnInit,AfterContentInit{
+export class AppComponent implements OnInit,AfterContentInit,AfterViewInit{
 
 
   preloading:Boolean=true;
@@ -40,7 +40,7 @@ export class AppComponent implements OnInit,AfterContentInit{
     this.type();
   }
 
-  ngAfterContentInit(){
+  ngAfterViewInit(){
     this.preloading=false;
   }
 
