@@ -1,0 +1,28 @@
+$background: #292929;
+@font-face {
+    font-family: Harry P;
+    src: url('../../assets/fonts/HARRYP.TTF');
+}
+
+#preloader{
+    display: block;
+}
+
+.preloader{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    overflow:hidden;
+    background-color: $background;
+    z-index:10102010;
+    svg{
+        position:absolute;
+        top: 45%;
+        left:50%;
+        transform: translate(-50%,-45%);
+    }
+}

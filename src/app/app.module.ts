@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PreLoaderComponent } from './pre-loader/pre-loader.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PreLoaderComponent
   ],
   imports: [
     BrowserModule,
