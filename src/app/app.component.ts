@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, ViewChild , OnInit, AfterContentInit, AfterViewInit} from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import { NgForm } from '@angular/forms';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-root',
@@ -36,7 +37,7 @@ export class AppComponent implements OnInit,AfterContentInit{
   }
 
   ngOnInit(){
-    
+    this.type();
   }
 
   ngAfterContentInit(){
@@ -55,6 +56,16 @@ export class AppComponent implements OnInit,AfterContentInit{
     //   node.async = false; 
     //   document.getElementsByTagName('head')[0].appendChild(node); 
     // }
+  }
+
+  type(){
+    var type = new Typed('.typed-text',{
+      strings: ['Student','Web Developer','Web Designer','Programmer','Graphic Designer'],
+      typeSpeed:80,
+      loop:true,
+      backDelay:900,
+      backSpeed:30
+    });
   }
 
   showResume(){
