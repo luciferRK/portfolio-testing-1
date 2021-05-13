@@ -40,6 +40,10 @@ export class AppComponent implements OnInit,AfterContentInit,AfterViewInit{
     this.type();
   }
 
+  ngAfterContentInit(){
+    
+  }
+
   ngAfterViewInit(){
     this.preloading=false;
   }
