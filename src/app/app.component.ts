@@ -34,6 +34,9 @@ export class AppComponent implements OnInit,AfterContentInit,AfterViewInit{
     if(window.innerWidth<window.innerHeight){
       this.navbarName="Likhith RK";
     }
+    window.onload = () =>{
+      this.preloading=false;
+    }
   }
 
   ngOnInit(){
@@ -41,11 +44,11 @@ export class AppComponent implements OnInit,AfterContentInit,AfterViewInit{
   }
 
   ngAfterContentInit(){
-    
+
   }
 
   ngAfterViewInit(){
-    this.preloading=false;
+   
   }
 
   
