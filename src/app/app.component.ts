@@ -15,7 +15,7 @@ import Typed from 'typed.js';
 export class AppComponent implements OnInit,AfterContentInit,AfterViewInit{
 
 
-  preloading:Boolean=true;
+  // preloading:Boolean=true;
   navbarName:String = "Likhith R Kulal";
   changeClass:Boolean = false;
   submitted:Boolean = false;
@@ -36,7 +36,7 @@ export class AppComponent implements OnInit,AfterContentInit,AfterViewInit{
     }
     window.onload = () =>{
       setTimeout(()=>{
-        this.preloading=false;
+        // this.preloading=false;
       },500);
     }
   }
