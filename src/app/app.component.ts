@@ -15,8 +15,23 @@ import Typed from 'typed.js';
 export class AppComponent implements OnInit,AfterContentInit,AfterViewInit{
 
 
-  // preloading:Boolean=true;
+  preloading:Boolean=true;
   navbarName:String = "Likhith R Kulal";
+  // templateString:string = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:transparent;display:block;" width="211px" height="211px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+  //                           <text x="50" y="50" text-anchor="middle" dy="0.38em" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#2f89fc" stroke-width="0.8" font-size="19" font-family="Arial">
+  //                             LOADING
+  //                             <animate attributeName="stroke-dasharray" repeatCount="indefinite" calcMode="spline" dur="5s" values="0 81;81 81;0 81" keyTimes="0;0.5;1" keySplines="0.3 0 0.7 1;0.3 0 0.7 1"></animate>
+  //                             <animate attributeName="stroke-dashoffset" repeatCount="indefinite" dur="5s" values="0;0;-81" keyTimes="0;0.5;1"></animate>
+  //                           </text>
+  //                         </svg>`;
+
+  // templateString:string = `<svg style='margin:auto;background:transparent;display:block;' width='211px' height='211px' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid'>
+  //                           <text x='50' y='50' text-anchor='middle' dy='0.38em' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke='#2f89fc' stroke-width='0.8' font-size='19' font-family='Arial'>
+  //                             LOADING
+  //                             <animate attributeName='stroke-dasharray' repeatCount='indefinite' calcMode='spline' dur='5s' values='0 81;81 81;0 81' keyTimes='0;0.5;1' keySplines='0.3 0 0.7 1;0.3 0 0.7 1'></animate>
+  //                             <animate attributeName='stroke-dashoffset' repeatCount='indefinite' dur='5s' values='0;0;-81' keyTimes='0;0.5;1'></animate>
+  //                           </text>
+  //                         </svg>`;
   changeClass:Boolean = false;
   submitted:Boolean = false;
   submitMsgColor:any = {
@@ -36,7 +51,7 @@ export class AppComponent implements OnInit,AfterContentInit,AfterViewInit{
     }
     window.onload = () =>{
       setTimeout(()=>{
-        // this.preloading=false;
+        this.preloading=false;
       },500);
     }
   }

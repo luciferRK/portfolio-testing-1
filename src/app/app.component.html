@@ -1,5 +1,9 @@
 <!-- <app-pre-loader *ngIf="preloading"></app-pre-loader> -->
 
+<div *ngIf="preloading" id="preloader" class="preloader">
+    <img src="../assets/images/name_harry.svg"/>
+</div>
+
 <div id="right-menu-bar">
     <div #bars (click)="toggleChange()" class="bars" [class.change]="changeClass">
         <div class="bar-1" [class.change]="changeClass"></div>
